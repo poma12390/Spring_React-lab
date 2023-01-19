@@ -41,38 +41,6 @@ public class PointHistoryElement {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setDate(long date) {
-        this.date = date;
-    }
-
-    public Point getPoint() {
-        return point;
-    }
-
-    public void setPoint(Point point) {
-        this.point = point;
-    }
-
-    public void setX(Double x) {
-        this.x = x;
-    }
-
-    public void setY(Double y) {
-        this.y = y;
-    }
-
-    public boolean isCheck() {
-        return isCheck;
-    }
-
-    public void setCheck(boolean check) {
-        isCheck = check;
-    }
-
     public long getDate() {
         return date;
     }
