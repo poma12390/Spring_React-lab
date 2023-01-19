@@ -1,6 +1,6 @@
 import {createStore} from 'redux';
 import reducers from './reducers';
-import middleware from "./combineMiddleware";
+import middleware from "./combineStateChangers";
 
 
 const initialState = {

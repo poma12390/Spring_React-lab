@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 
-class RegisterContainer extends React.Component{
+class RegisterForm extends React.Component{
     render() {
         return(
             <main className="container">
@@ -57,4 +57,4 @@ const mapStateToProps = function(store) {
     }
 };
 
-export default connect(mapStateToProps)(RegisterContainer);
+export default connect(mapStateToProps)(RegisterForm);

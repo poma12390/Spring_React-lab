@@ -1,9 +1,9 @@
 import React from "react";
 import {withRouter} from "react-router-dom";
-import RegisterContainer from "./registerContainer";
+import RegisterForm from "./registerForm";
 
 const RegisterPage = withRouter(({history})=>{
-    return(<RegisterContainer history={history}/>)
+    return(<RegisterForm history={history}/>)
 });
 
 export default RegisterPage;

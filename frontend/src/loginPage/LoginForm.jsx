@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 
-class LoginContainer extends React.Component{
+class LoginForm extends React.Component{
     render() {
         return(
             <main className="container">
@@ -55,4 +55,4 @@ const mapStateToProps = function(store) {
     }
 };
 
-export default connect(mapStateToProps)(LoginContainer)
+export default connect(mapStateToProps)(LoginForm)

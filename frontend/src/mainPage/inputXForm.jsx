@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 
-class InputX extends React.Component{
+class InputXForm extends React.Component{
     render() {
         return(
             <table className="input-table">
@@ -77,4 +77,4 @@ const mapStateToProps = function(store) {
     }
 };
 
-export default connect(mapStateToProps)(InputX)
+export default connect(mapStateToProps)(InputXForm)

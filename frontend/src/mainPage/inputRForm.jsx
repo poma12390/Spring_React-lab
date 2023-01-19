@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 
-class InputR extends React.Component{
+class InputRForm extends React.Component{
     render() {
         return(
             <table className="input-table">
@@ -51,4 +51,4 @@ const mapStateToProps = function(store) {
     }
 };
 
-export default connect(mapStateToProps)(InputR);
+export default connect(mapStateToProps)(InputRForm);

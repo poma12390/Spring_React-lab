@@ -1,6 +1,6 @@
 import {DEFAULT_URL} from "../index";
 
-const loginMiddleware = store => next => action =>{
+const loginStateChanger = store => next => action =>{
     switch (action.type) {
 
         case "APP_LOGIN":{
@@ -32,4 +32,4 @@ const  handleLoginResponse = (text, store, history)=>{
     else store.dispatch({type: "LOGIN_SET_ERROR", value: true})
 };
 
-export default loginMiddleware;
+export default loginStateChanger;

@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
-import InputX from "./inputX";
-import InputR from "./inputR";
+import InputXForm from "./inputXForm";
+import InputRForm from "./inputRForm";
 import Canvas from "./canvas";
 import ResultTable from "./resultTable";
 import "../css/Main_styles.css"
@@ -21,7 +21,7 @@ class MainContainer extends React.Component{
                 <h1>Определение попадания точки в область</h1>
                 <Canvas/>
                 <h2>Координата X</h2>
-                <InputX/>
+                <InputXForm/>
                 <h2>Координата Y</h2>
                 <div>
                     <input className="y" type="text" value={this.props.y} placeholder="от -3 до 3" onChange={event => this.props.dispatch({
@@ -29,7 +29,7 @@ class MainContainer extends React.Component{
                         value: event.target.value.replace(",",".")})}/>
                 </div>
                 <h2>Радиус</h2>
-                <InputR/>
+                <InputRForm/>
                 <button className="submit-button" onClick={()=>this.props.dispatch({
                     type: "MAIN_ADD_POINT",
                     value:{x: this.props.x, y:this.props.y, r:this.props.r}

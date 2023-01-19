@@ -1,6 +1,6 @@
 import {DEFAULT_URL} from "../index";
 
-const registerMiddleware = store => next => action =>{
+const registerStateChanger = store => next => action =>{
     switch (action.type) {
 
         case "APP_REGISTER":{
@@ -47,4 +47,4 @@ const handleRegisterResponse = (text, store, history)=>{
     else store.dispatch({type: "REGISTER_SET_LOGIN_ERROR",value: true});
 };
 
-export default registerMiddleware;
+export default registerStateChanger;

@@ -1,6 +1,6 @@
 import {DEFAULT_URL} from "../index";
 
-const mainMiddleware = store => next => action =>{
+const mainStateChanger = store => next => action =>{
 
     switch (action.type) {
 
@@ -122,4 +122,4 @@ const handleUpdate = (text, store, history=null)=>{
     else store.dispatch({type: "APP_LOGOUT", value:{history: history}})
 };
 
-export default mainMiddleware;
+export default mainStateChanger;

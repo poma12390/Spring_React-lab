@@ -1,9 +1,9 @@
 import React from "react";
 import {withRouter} from "react-router-dom";
-import LoginContainer from "./LoginContainer";
+import LoginForm from "./LoginForm";
 
 const LoginPage = withRouter((props)=>{
-    return(<LoginContainer history={props.history}/>)
+    return(<LoginForm history={props.history}/>)
 });
 
 export default LoginPage;
